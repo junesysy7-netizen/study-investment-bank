@@ -22,14 +22,14 @@ export default function BalanceCard({ data, tier, totalHours, moneyPulse }: Bala
           Study Investment Account
         </p>
         <span className="rounded-full bg-bank-green-soft px-2.5 py-1 text-[11px] font-medium text-bank-green dark:bg-vault-elevated dark:text-bank-glow-dark">
-          미래 시급에 투자 중
+          미래 시급에 투자 중입니다.
         </span>
       </div>
 
       {/* 잔액 (가장 크게) */}
       <div className="relative mt-4">
         <MoneyPopup pulse={moneyPulse} />
-        <p className="text-xs text-muted dark:text-vault-muted">Balance</p>
+        <p className="text-xs text-muted dark:text-vault-muted">통장 총액</p>
         <motion.p
           key={data.balance}
           initial={{ opacity: 0.5, y: 4 }}
